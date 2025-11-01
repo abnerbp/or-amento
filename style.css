@@ -1,0 +1,255 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Sidebar fixa na lateral esquerda com estilo moderno */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background: linear-gradient(180deg, #111, #222);
+  color: white;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.sidebar h4 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 10px;
+}
+
+.sidebar .nav-link {
+  color: #ccc;
+  margin-bottom: 10px;
+  transition: color 0.2s ease;
+}
+
+.sidebar .nav-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Conteúdo principal com rolagem vertical */
+.content {
+  margin-left: 250px;
+  padding: 30px;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+/* Página com imagem de fundo e sombra */
+.pagina {
+  width: 794px;
+  height: 1123px;
+  margin: 40px auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+/* Imagens de fundo específicas */
+#inicio {
+  width: 21cm;
+  height: 15cm;
+  background-image: url('img/Inicio.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin: 40px auto;
+  position: relative;
+}
+
+#motonacional {
+  background-image: url('img/motoNaci.png');
+}
+
+#pickup {
+  background-image: url('img/pickUp.png');
+}
+
+#motoimportada {
+  background-image: url('img/motoImpo.png');
+}
+
+#carronacional {
+  background-image: url('img/carNaci.png');
+}
+
+#carronacionalesp {
+  background-image: url('img/carNaciEsp.png');
+}
+
+#carroimportado {
+  background-image: url('img/carImpo.png');
+}
+
+#carroimportadoesp {
+  background-image: url('img/carImpoEsp.png');
+}
+
+/*Botões posicionados sobre a imagem */
+.pagina {
+  position: relative;
+}
+
+#salvar {
+  position: absolute;
+  top: 1050px;     /* distância do topo */
+  left: 700px;   /* distância da esquerda */
+}
+
+
+/* Campos de entrada posicionados sobre a imagem */
+.campo {
+  position: absolute;
+  width: 450px;
+  padding: 8px;
+  background-color: transparent;
+  border: transparent;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+
+/* Posições dos campos */
+#consultor {
+  top: 25px;
+  left: 48px;
+}
+
+#cliente {
+  top: 90px;
+  left: 48px;
+}
+
+#veiculo {
+  top: 218px;
+  left: 140px;
+}
+
+#ano {
+  top: 255px;
+  left: 170px;
+}
+
+#valor {
+  top: 288px;
+  left: 155px;
+}
+
+#codfipe {
+  top: 325px;
+  left: 145px;
+}
+
+#utilizacao {
+  top: 358px;
+  left: 155px;
+}
+
+#cidade {
+  top: 395px;
+  left: 155px;
+}
+
+#adesao {
+  top: 459px;
+  left: 105px;
+}
+
+#mensalidade {
+  top: 459px;
+  left: 295px;
+}
+/* Posições dos campos moto */
+#consultorMoto {
+  top: 25px;
+  left: 48px;
+}
+
+#clienteMoto {
+  top: 90px;
+  left: 48px;
+}
+
+#veiculoMoto {
+  top: 219px;
+  left: 135px;
+}
+
+#cilindradaMoto {
+  top: 254px;
+  left: 156px;
+}
+
+#anoMoto {
+  top: 288px;
+  left: 170px;
+}
+
+#valorMoto {
+  top: 325px;
+  left: 155px;
+}
+
+#codfipeMoto {
+  top: 358px;
+  left: 140px;
+}
+
+#cidadeMoto {
+  top: 395px;
+  left: 150px;
+}
+
+#adesaoMoto {
+  top: 470px;
+  left: 105px;
+}
+
+#mensalidadeTerceiroMoto {
+  top: 544px;
+  left: 100px;
+}
+
+#mensalidadeSemTerceiroMoto {
+  top: 544px;
+  left: 438px;
+}
+
+/* Responsividade básica */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .content {
+    margin-left: 200px;
+    padding: 20px;
+  }
+
+  .pagina {
+    width: 100%;
+    height: auto;
+  }
+
+  .campo {
+    width: 80%;
+  }
+}
